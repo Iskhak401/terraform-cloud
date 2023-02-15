@@ -4,12 +4,8 @@ resource "aws_flow_log" "flow-role" {
   traffic_type    = "ALL"
   vpc_id          = aws_vpc.some_custom_vpc.id
 
-  depends_on = [
-    aws.iam_role.flow-role,
-    aws_cloudwatch_log_group,vpc-logs,
-    aws_vpc.some_custom_vpc
-  ]
-}
+
+ }
 
 
 resource "aws_cloudwatch_log_group" "vpc-logs" {
