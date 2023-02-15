@@ -12,7 +12,7 @@ resource "aws_cloudwatch_log_group" "vpc-logs" {
   name = "vpc-logs"
 
   tags = {
-    Environment = "dev"
+    Environment = "develop"
   }
 }
 
